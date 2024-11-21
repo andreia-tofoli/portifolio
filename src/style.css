@@ -86,6 +86,17 @@ body{
     text-align: left; /* Alinha o texto à esquerda */
 }
 
+.apresentacao .redes-sociais {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 20px; /* Adiciona um espaçamento acima dos ícones */
+    align-items: center; /* Centraliza os ícones */
+    font-size: 30px; /* Aumenta o tamanho dos ícones */
+
+
+}
+
+
 
 
 
@@ -108,6 +119,26 @@ body{
     flex: 1; /* O texto ocupará o espaço disponível */
 }
 
+.botoes {
+    display: flex; /* Define como um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgba(144, 238, 144, 0.7); /* Cor de fundo */
+    width: 200px; /* Largura */
+    height: 50px; /* Altura */
+    border-radius: 20px; /* Bordas arredondadas */
+    margin-top: 20px;
+  
+}
+
+.botoes a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+
+}
+
+
 .texto-sobre-mim h2 {
     font-size: 2.5rem; /* Ajusta o tamanho do título */
     margin-bottom: 20px;
@@ -126,13 +157,6 @@ body{
     border-bottom-right-radius: 20%;
 }
 
-.apresentacao .redes-sociais {
-    display: flex;
-    gap: 10px; /* Espaçamento entre os ícones */
-    margin-top: 20px; /* Adiciona um espaçamento acima dos ícones */
-    align-items: center; /* Centraliza os ícones */
-}
-
 
 
 
@@ -145,6 +169,10 @@ body{
 }
 
 /* HABILIDADES */
+
+.habilidades{
+    height: 100vh;
+}
 
 .habilidades .container-habilidades .informacoes:hover {
     background-color: #f0f8ff;
@@ -159,6 +187,8 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .habilidades .container-habilidades .informacoes{
@@ -199,6 +229,12 @@ body{
 
 
 /* PROJETOS */
+
+.container-habilidades{
+    padding-bottom: 100px;
+
+}
+
 .projetos .container-projetos {
     display: grid;        
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -264,6 +300,71 @@ body{
     bottom: 0;
 }
 
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Garante que apenas o slide ativo apareça */
+  }
+
+  .projeto img {
+    width: 400px; /* Assegura que a imagem ocupe toda a largura do contêiner */
+    height: 500px; /* Ajusta a altura para todas as imagens */
+    object-fit: contain; /* Corta a imagem para caber dentro do espaço sem distorcer */
+}
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave ao trocar de slide */
+  }
+  
+  .slides .projeto {
+    min-width: 100%; /* Cada projeto ocupa 100% da largura do carrossel */
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  /* Controle dos slides */
+  input[type="radio"] {
+    display: none; /* Oculta os botões de rádio */
+  }
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+  
+  #slide4:checked ~ .slides {
+    transform: translateX(-300%);
+  }
+  
+  /* Navegação */
+  .navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .navegacao label {
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked + label {
+    background: #333; /* Destaque para a bolinha ativa */
+  }
+  
+
 
 
 
@@ -276,13 +377,106 @@ body{
     background-color: var(--cor-fundo-cinza-claro);
 }
 
+
 .footer .container {
     padding: 5rem 0;
 }
 
 .footer h2 {
     font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-normal);
+    font-size: 2=30px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+
+
+
+   
+
+
+/* Adicione isto ao seu arquivo style.css */
+footer .redes-sociais a i {
+    font-size: 30px; /* Aumenta o tamanho dos ícones */
+    padding: 20px;
+
+  }
+  
+
+
+.meus-projetos{
+    padding-top: 60px;
+}
+
+/* Seção de Habilidades */
+.habilidades {
+    display: block; /* Garante que a seção de habilidades ocupe uma linha inteira */
+    padding: 60px 20px;
+    margin-bottom: 40px; /* Espaçamento entre a seção habilidades e a próxima */
+  }
+  
+  /* Seção de Meus Projetos */
+  .meus-projetos {
+    display: block; /* Garante que a seção de projetos ocupe uma linha inteira */
+    padding: 60px 20px;
+    margin-top: 20px; /* Ajusta o espaçamento entre as seções */
+  }
+
+  
+  /* Seção de Habilidades */
+.habilidades {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 60px 20px;
+  }
+  
+  /* Seção de Meus Projetos */
+  .meus-projetos {
+    display: flex;
+    flex-direction: column; /* Garante que os itens dentro da seção fiquem em coluna */
+    padding: 60px 20px;
+    margin-top: 20px; /* Ajusta o espaçamento entre as seções */
+  }
+  
+  /* Seção de Habilidades */
+.habilidades {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 60px 20px;
+    margin-bottom: 60px; /* Espaçamento consistente abaixo da seção */
+}
+
+/* Seção de Meus Projetos */
+.meus-projetos {
+    display: flex;
+    flex-direction: column; /* Garante que os itens dentro da seção fiquem em coluna */
+    padding: 60px 20px;
+    margin-top: 60px; /* Espaçamento consistente acima da seção */
+    height: auto; /* Define altura dinâmica com base no conteúdo */
+}
+
+
+
+
+
+
+.meus-projetos {
+    display: flex;
+    flex-direction: column; /* Garante o layout vertical */
+    padding: 40px 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Espaçamento externo entre a seção anterior */
+    margin-bottom: 40px; /* Espaçamento externo para a próxima seção */
+    height: auto; /* Altura dinâmica baseada no conteúdo */
+}
+
+/* Certifique-se de que todas as outras seções respeitem o fluxo do layout */
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+
+
