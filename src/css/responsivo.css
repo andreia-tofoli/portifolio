@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+
+   /* APRESENTAÇÃO */
+   
     .apresentacao {
         flex-direction: column;
         align-items: center;
@@ -44,7 +47,11 @@
 
     .habilidades h2 {
         text-align: center;
+    }
 
+    .meus-projetos h2{
+        font-size: 30px;
+        text-align: center;        
     }
 }
 
@@ -78,6 +85,16 @@
 }
 
 @media (max-width: 432px) {
+
+    body{
+        padding: 40px 20px;
+    }
+
+    
+    .apresentacao .foto-perfil img{
+        height: 200px;
+        width: 200px;
+    }
     .meus-projetos img{
         width: 200px;
 

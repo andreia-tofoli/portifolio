@@ -1,22 +1,23 @@
 .header nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
 }
-
 
 .header nav ul li a {
     font-size: 2rem;
     font-weight: 500;
-    padding: 10px 30px;
     border-radius: 50px;
     transition: 0.3s;
+    font-size: 25px;
+    padding: 0 30px;
+
 }
 
 .header nav ul li a:hover {
     background: rgba(144, 238, 144, 0.7);
+    padding: 10px 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
+    transform: scale(1.1);
 }
 
 /*RESPONSIVO*/
@@ -88,7 +89,12 @@
 
     .header nav ul {
         display: none;
+        background: rgba(229, 235, 229, 0.7);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
     }
+
 
     .header input:checked~ul {
         display: block;
@@ -103,13 +109,19 @@
 
     .header nav ul {
         width: 200px;
-        padding: 20px;
+        padding: 10px 0;
+        line-height: 50px;
     }
 
     .header nav ul a {
-        text-align: center;
-        padding: 20px;
-        display: block;
+        text-align: center; 
+        display: inline-block;
     }
 
+    .header nav ul li a:hover {
+        background: rgba(144, 238, 144, 0.7);
+        padding: 1px 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
+    }
 }

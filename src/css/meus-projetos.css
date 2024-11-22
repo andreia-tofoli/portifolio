@@ -1,3 +1,8 @@
+.meus-projetos h2{
+    font-size: 40px;        
+}
+
+
 .projeto img {
     width: auto;
     height: 500px;
@@ -19,6 +24,7 @@
     min-width: 100%;
     flex-shrink: 0;
     text-align: center;
+    margin-top: 10%;
 }
 
 input[type="radio"] {
@@ -46,6 +52,7 @@ input[type="radio"] {
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .navegacao label {

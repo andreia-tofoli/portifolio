@@ -16,7 +16,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/variaveis.css">
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/global.css">
   <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/apresentacao.css">
   <link rel="stylesheet" href="./src/css/sobre-mim.css">
@@ -50,7 +50,7 @@
     <section class="apresentacao">
       <div class="foto-perfil">
         <img src="./src/imagens/foto-perfil.png" alt="foto-perfil">
-      </div class>
+      </div>
       <div class="saudacao">
         <h2>Olá, eu sou Andreia Tofoli</h2>
         <p>Desenvolvedora Front-End</p>
@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <section class="sobre-mim">
+    <section class="sobre-mim" id="sobre">
       <div class="texto-sobre-mim">
         <h2>Sobre mim.</h2>
         <p>Olá! Sou Andreia Tofoli, uma desenvolvedora frontend em formação, apaixonada por tecnologia e pela
@@ -94,100 +94,103 @@
 
     <section class="habilidades" id="habilidades">
       <div class="container">
-          <div>
-            <h2>Habilidades</h2>
-          </div>
-        </div>
-
-        <div class="container-habilidades">
-          <div class="informacoes html">
-            <div class="logo">
-              <i class="fab fa-html5"></i>
-            </div>
-            <h3>HTML5</h3>
-            <p>Desenvolvimento de estruturas semânticas e acessíveis, seguindo as boas práticas para SEO e usabilidade.
-            </p>
-          </div>
-
-          <div class="informacoes css">
-            <div class="logo">
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <h3>CSS3</h3>
-            <p>Criação de layouts responsivos e estilizados, utilizando técnicas como Flexbox e Grid.</p>
-          </div>
-
-          <div class="informacoes github">
-            <div class="logo">
-              <i class="fab fa-github-square"></i>
-            </div>
-            <h3>GitHub</h3>
-            <p>Publicação e gerenciamento de repositórios, colaborando com equipes e documentando projetos.</p>
-          </div>
-
-          <div class="informacoes git">
-            <div class="logo">
-              <i class="fab fa-git-alt"></i>
-            </div>
-            <h3>Git</h3>
-            <p>Controle de versão eficiente, garantindo rastreamento de alterações e trabalho colaborativo em projetos
-            </p>
-          </div>
+        <div>
+          <h2>Habilidades</h2>
         </div>
       </div>
-    </section>
 
-    <section class="meus-projetos">
-      <div class="carrossel">
-        <input type="radio" name="controle" id="slide1" checked />
-        <input type="radio" name="controle" id="slide2" />
-        <input type="radio" name="controle" id="slide3" />
-        <input type="radio" name="controle" id="slide4" />
-
-        <div class="slides">
-          <div class="projeto" id="projeto1">
-            <img src="./src/imagens/projeto-1.png" alt="Projeto 1" />
-            <h3>Projeto 1</h3>
-            <p>Projeto feito com HTML, CSS e JavaScript</p>
+      <div class="container-habilidades">
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="fab fa-html5"></i>
           </div>
-          <div class="projeto" id="projeto2">
-            <img src="./src/imagens/projeto-2.png" alt="Projeto 2" />
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2</p>
-          </div>
-          <div class="projeto" id="projeto3">
-            <img src="./src/imagens//projeto-3.png" alt="Projeto 3" />
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3</p>
-          </div>
-          <div class="projeto" id="projeto4">
-            <img src="./src/imagens/projeto-4.png" alt="Projeto 4" />
-            <h3>Projeto 4</h3>
-            <p>Descrição do projeto 4</p>
-          </div>
+          <h3>HTML5</h3>
+          <p>Desenvolvimento de estruturas semânticas e acessíveis, seguindo as boas práticas para SEO e usabilidade.
+          </p>
         </div>
 
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Criação de layouts responsivos e estilizados, utilizando técnicas como Flexbox e Grid.</p>
+        </div>
 
-        <div class="navegacao">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="fab fa-github-square"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Publicação e gerenciamento de repositórios, colaborando com equipes e documentando projetos.</p>
+        </div>
+
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Controle de versão eficiente, garantindo rastreamento de alterações e trabalho colaborativo em projetos
+          </p>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
 
-   <footer class="footer">
-      <div class="container">
-        <h2>Me envie uma mensagem!</h2>
-        <div class="redes-sociais">
-          <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-          <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+  <section class="meus-projetos" id="projetos">
+    <div class="titulo">
+      <h2>Projetos</h2>
+    </div>
+    <div class="carrossel">
+      <input type="radio" name="controle" id="slide1" checked />
+      <input type="radio" name="controle" id="slide2" />
+      <input type="radio" name="controle" id="slide3" />
+      <input type="radio" name="controle" id="slide4" />
+
+      <div class="slides">
+        <div class="projeto" id="projeto1">
+          <img src="./src/imagens/projeto-1.png" alt="Projeto 1" />
+          <h3>Projeto 1</h3>
+          <p>Projeto feito com HTML, CSS e JavaScript</p>
+        </div>
+        <div class="projeto" id="projeto2">
+          <img src="./src/imagens/projeto-2.png" alt="Projeto 2" />
+          <h3>Projeto 2</h3>
+          <p>Descrição do projeto 2</p>
+        </div>
+        <div class="projeto" id="projeto3">
+          <img src="./src/imagens//projeto-3.png" alt="Projeto 3" />
+          <h3>Projeto 3</h3>
+          <p>Descrição do projeto 3</p>
+        </div>
+        <div class="projeto" id="projeto4">
+          <img src="./src/imagens/projeto-4.png" alt="Projeto 4" />
+          <h3>Projeto 4</h3>
+          <p>Descrição do projeto 4</p>
         </div>
       </div>
-    </footer>
+
+
+      <div class="navegacao">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <div class="redes-sociais">
+        <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
+        <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

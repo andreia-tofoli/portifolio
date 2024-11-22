@@ -33,6 +33,7 @@
 .habilidades .container-habilidades .informacoes:hover {
     background-color: rgba(144, 238, 144, 0.7); 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
     border-radius: 10%;
 }
 

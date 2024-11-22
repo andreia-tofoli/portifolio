@@ -32,6 +32,10 @@
     margin-top: 20px;  
 }
 
+.botoes:hover{
+    transform: scale(1.1);
+}
+
 .botoes a {
     font-size: 1rem; 
     font-weight: bold; 
