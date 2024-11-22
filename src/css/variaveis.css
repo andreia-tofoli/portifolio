@@ -1,3 +1,5 @@
 :root{
-    --max-widt-size:1920px
+    --cor-primaria: rgba(144, 238, 144, 0.7);
+    --cor-sombra: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+

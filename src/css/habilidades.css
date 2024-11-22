@@ -1,5 +1,6 @@
 .habilidades{
     height: auto;
+    padding: 40px;
 }
 
 .habilidades h2{
@@ -31,8 +32,8 @@
 }
 
 .habilidades .container-habilidades .informacoes:hover {
-    background-color: rgba(144, 238, 144, 0.7); 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: var(--cor-primaria);
+    box-shadow:var(--cor-sombra);
     transform: scale(1.1);
     border-radius: 10%;
 }
