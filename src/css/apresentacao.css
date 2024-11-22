@@ -1,0 +1,100 @@
+.apresentacao {
+        display: flex;
+        justify-content: flex-start; /* Alinha os itens no início (lado esquerdo) */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh;
+        padding: 0 20px; /* Adiciona um pequeno espaçamento lateral */
+        gap: 100px; /* Controla o espaço entre imagem e texto */
+}   
+
+.apresentacao .foto-perfil img {
+    flex: 0 0 auto; /* Garante que a imagem não seja redimensionada */
+    width: 400px; /* Ajusta o tamanho da imagem */
+    height:450px; /* Ajusta o tamanho da imagem */
+    border-radius: 50%; /* Mantém a imagem circular */
+    object-fit: cover; /* Corta a imagem para caber dentro do espaço */
+    background: rgba(144, 238, 144, 0.7); /* Adiciona o fundo colorido */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ajuste os valores para personalizar */
+}
+
+.apresentacao .saudacao {
+    flex: 1; /* Faz o texto ocupar mais espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o texto verticalmente */
+    padding-left: 20px; /* Ajusta o espaçamento entre a imagem e o texto */
+}
+
+.apresentacao .saudacao h2{
+    font-size: 60px;
+}
+
+.apresentacao .saudacao p{
+    font-size: 50px;
+}
+
+.apresentacao .redes-sociais {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 20px; /* Adiciona um espaçamento acima dos ícones */
+    align-items: center; /* Centraliza os ícones */
+    font-size: 30px; /* Aumenta o tamanho dos ícones */
+}
+
+.apresentacao .redes-sociais a {
+    display: flex; /* Define o contêiner como flexbox */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    height: 60px; /* Define o tamanho fixo inicial */
+    width: 60px; /* Define o tamanho fixo inicial */
+    text-align: center;
+    background: transparent; /* Estado inicial sem fundo */
+    border-radius: 50%; /* Mantém o formato circular */
+    transition: all 0.3s ease; /* Aplica a transição suave */
+}
+
+.apresentacao .redes-sociais a:hover {
+    background: rgba(144, 238, 144, 0.7);  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra no hover */
+    transform: scale(1.1); /* Opcional: adiciona um pequeno zoom */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

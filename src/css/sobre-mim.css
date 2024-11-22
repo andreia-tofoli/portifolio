@@ -1,0 +1,47 @@
+.sobre-mim {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 40px; 
+    height: auto;
+}
+
+.texto-sobre-mim {
+    flex: 1; 
+}
+
+.texto-sobre-mim h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+.texto-sobre-mim p {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+}
+
+.botoes {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(144, 238, 144, 0.7); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    width: 200px; 
+    height: 50px; 
+    border-radius: 20px; 
+    margin-top: 20px;  
+}
+
+.botoes a {
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+
+.foto-perfil img {
+    width: 400px;
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover;
+    border-bottom-right-radius: 20%;
+}
+

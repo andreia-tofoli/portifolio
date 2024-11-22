@@ -1,0 +1,51 @@
+.habilidades{
+    height: auto;
+}
+
+.habilidades h2{
+    font-size: 40px;
+}
+ 
+.habilidades .container-habilidades {    
+    text-align: center;    
+    display: flex;
+    justify-content: center;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.habilidades .container-habilidades .informacoes{
+    max-width: 350px;
+    padding: 40px 20px;    
+}
+
+.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes h3,
+.habilidades .container-habilidades .informacoes .logo i{
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.habilidades .container-habilidades .informacoes:hover {
+    background-color: rgba(144, 238, 144, 0.7); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+}
+
+.habilidades .container-habilidades .informacoes h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px; 
+}
+
+.habilidades .container-habilidades .informacoes p {
+    font-size: 20px;
+}
+
+.habilidades .container-habilidades .informacoes .logo i {
+    font-size: 8rem;
+}

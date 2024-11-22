@@ -1,0 +1,85 @@
+@media (max-width: 900px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .apresentacao .saudacao h2 {
+        font-size: 40px;
+    }
+
+    .apresentacao .saudacao p {
+        font-size: 20px;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .apresentacao .redes-sociais {
+        font-size: 20px;
+    }
+
+    /* SOBRE MIM */
+
+    .sobre-mim .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sobre-mim .foto-perfil {
+        display: none;
+    }
+
+    /* HABILIDADES */
+
+
+    .habilidades h2 {
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .sobre-mim .texto-sobre-mim p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 568px) {
+    .apresentacao .saudacao h2 {
+        font-size: 20px;
+    }
+
+    .apresentacao .saudacao p {
+        font-size: 16px;
+    }
+
+    .habilidades h2 {
+        font-size: 30px;
+    }
+
+    .meus-projetos {
+        width: 100%;
+        height: auto;
+    }
+
+    .meus-projetos img{
+        width: 300px;
+        height: auto;    }
+}
+
+@media (max-width: 432px) {
+    .meus-projetos img{
+        width: 200px;
+
+    }   
+}
