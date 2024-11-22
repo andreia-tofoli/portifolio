@@ -78,6 +78,6 @@ Exercício prático com Grid e Flexbox para construir uma landing page responsiv
 Recriação de uma landing page com foco em Flexbox e responsividade.
 
 ## Como Visualizar o Projeto
-1. Clone este repositório:
+1. Clique no link abaixo:
    ```bash
-   git clone https://github.com/andreia-tofoli/portifolio.git
+   https://github.com/andreia-tofoli/portifolio
