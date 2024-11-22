@@ -80,4 +80,4 @@ Recriação de uma landing page com foco em Flexbox e responsividade.
 ## Como Visualizar o Projeto
 1. Copie o link abaixo:
    ```bash
-   https://github.com/andreia-tofoli/portifolio
+   https://andreia-tofoli.github.io/portifolio/
