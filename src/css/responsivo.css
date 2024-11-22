@@ -53,6 +53,8 @@
         font-size: 30px;
         text-align: center;        
     }
+
+    
 }
 
 @media (max-width: 700px) {
@@ -97,6 +99,12 @@
     }
     .meus-projetos img{
         width: 200px;
-
     }   
+
+    .meus-projetos p {
+        width: 200px;
+        height: 200px;
+        font-size: 12px;
+
+    }
 }
